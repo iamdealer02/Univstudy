@@ -11,7 +11,6 @@
                 hiddenDivision.style.visibility = "hidden";
                 homediv.style.filter = 'none';
                 console.log('else')
-
             }
         };
 
