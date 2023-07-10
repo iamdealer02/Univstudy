@@ -70,23 +70,31 @@
         }
         }
 
-        //to sscroll to the particular part of the page--------------------------------------------------------------
-        textElement = document.getElementById('aboutus_icon');
-        textElement.addEventListener('click', function() {
-            var targetDivision = document.getElementById('aboutus');
-            targetDivision.scrollIntoView({ behavior: 'smooth' });
+        // Scroll to the particular part of the page and close the navbar collapse
+        function scrollToSectionAndCloseNavbar(sectionId) {
+            var targetSection = document.getElementById(sectionId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        
+            // Close the navbar collapse
+            var navbarCollapse = document.getElementById('navbarNav');
+            if (navbarCollapse.classList.contains('show')) {
+            navbarCollapse.classList.remove('show');
+            }
+        }
+        
+        // Event listeners for navbar links
+        document.getElementById('homeicon').addEventListener('click', function() {
+            scrollToSectionAndCloseNavbar('home');
         });
-
-        textElement1 = document.getElementById('homeicon');
-        textElement1.addEventListener('click', function() {
-            var targetDivision = document.getElementById('home');
-            targetDivision.scrollIntoView({ behavior: 'smooth' });
+        
+        document.getElementById('aboutus_icon').addEventListener('click', function() {
+            scrollToSectionAndCloseNavbar('aboutus');
         });
-        textElement2 = document.getElementById('serviceicon');
-        textElement2.addEventListener('click', function() {
-            var targetDivision = document.getElementById('service');
-            targetDivision.scrollIntoView({ behavior: 'smooth' });
+        
+        document.getElementById('serviceicon').addEventListener('click', function() {
+            scrollToSectionAndCloseNavbar('service');
         });
+        
 
         //-------------------------------------------------------------------------------------------------------
 
