@@ -41,12 +41,17 @@
       }
     
       #characterstic {
-        margin-top: 5px;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the circles horizontally */
+        align-items: flex-start; /* Align the circles to the top */
       }
     
       .circle {
         margin: 5px;
-        width: auto; /* Set width to auto for dynamic sizing */
+        width: auto;
+        flex-basis: calc(33.33% - 10px); /* Adjust the width of the circles */
       }
     
   }

@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: center; /* Align contents in the center horizontally */
     align-items: center; /* Align contents in the center vertically */
+    z-index: 9999;
 }
 #Ontop img{
     height: 3rem;
