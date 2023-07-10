@@ -44,16 +44,25 @@ body {
     text-decoration: underline;
 }
 
-#logo {
-    margin-left: 45rem;
-    
-}
-#animated_right{
-    height: 4rem;
-    width: 4 rem;
-    margin-bottom: 4rem;
-}
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+  }
+  
+  #logo {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #animated_right {
+    max-width: 10%;
+    height: 10%;
+    margin-left: 0rem; /* Adjust the margin as needed for spacing between the logo and image */
+    margin-right: 5 rem;
+  }
 
 #contentdiv {
     display: flex; /* Use flexbox to position the elements side by side */
