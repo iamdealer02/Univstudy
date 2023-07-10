@@ -36,6 +36,7 @@ body {
 }
 #Ontop h2:last-child {
     margin-right: 5rem; /* Remove spacing from the last item */
+   
 }
 .headerclass{
     text-decoration: none;
