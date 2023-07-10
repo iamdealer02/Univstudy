@@ -30,12 +30,12 @@ body {
 }
 #Ontop h2 {
     margin: 0;
-    margin-right: 60px; /* Add spacing between items */
+    margin-right: 90px; /* Add spacing between items */
     cursor: pointer;
     margin-top: 3 rem;
 }
 #Ontop h2:last-child {
-    margin-right: 0; /* Remove spacing from the last item */
+    margin-right: 5rem; /* Remove spacing from the last item */
 }
 .headerclass{
     text-decoration: none;
