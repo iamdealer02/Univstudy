@@ -55,3 +55,27 @@
       }
     
   }
+/* Media Query for smaller screens */
+@media (max-width: 767px) {
+  #flexdetails {
+      flex-direction: row;
+  }
+
+  #contactus {
+      padding: 0;
+      margin-left: 0;
+  }
+
+  #wecontact {
+      padding: 0;
+  }
+
+  #tab {
+      justify-content: space-between;
+  }
+
+  #tab img {
+      height: 8%;
+      width: 8%;
+  }
+}
