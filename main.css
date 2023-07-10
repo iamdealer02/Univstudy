@@ -1,0 +1,416 @@
+body {
+    font-family: "poppins", sans-serif;
+    margin: 0; /* Remove default body margin */
+    padding-top: 60px; /* Adjust the padding to account for the fixed header */
+    cursor: default;
+    background-color:rgb(244, 236, 225);
+    filter: none;
+}
+
+
+#Ontop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgb(235, 231, 223);
+    padding: 0.5%;
+    font: 'Raleway', sans-serif;
+    color: rgba(68, 46, 46, 0.6);
+    font-size: small;
+    display: flex;
+    justify-content: center; /* Align contents in the center horizontally */
+    align-items: center; /* Align contents in the center vertically */
+}
+#Ontop img{
+    height: 3rem;
+    width: 3 rem;
+   
+    
+}
+#Ontop h2 {
+    margin: 0;
+    margin-right: 60px; /* Add spacing between items */
+    cursor: pointer;
+    margin-top: 3 rem;
+}
+#Ontop h2:last-child {
+    margin-right: 0; /* Remove spacing from the last item */
+}
+.headerclass{
+    text-decoration: none;
+}
+.headerclass active{
+    text-decoration: underline;
+}
+
+#logo {
+    margin-left: 45rem;
+    
+}
+#animated_right{
+    height: 4rem;
+    width: 4 rem;
+    margin-bottom: 4rem;
+}
+
+
+#contentdiv {
+    display: flex; /* Use flexbox to position the elements side by side */
+    align-items: center; /* Center elements vertically */
+}
+#contentdiv img {
+    width: 50%; /* Set the width of the image */
+    height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#text {
+    margin-left: 20px; /* Add some spacing between the image and the text */
+}
+#movingback {
+    background-color: white;
+    /* background: url(https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif); */
+}
+#para1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(8, 8, 8,0.6); 
+    width: 100%;
+    font-size: 5rem; /* Adjust the font size of the heading */
+    margin-bottom: 7rem; /* Add some spacing below the heading */        
+}
+.headerclass:hover{
+    color: brown;
+    cursor:default;
+}
+#box{
+    background-color: rgb(127, 119, 109);
+    padding: 3%;
+  
+    
+
+}
+#para2{
+    animation: slide-in 1s ease-out forwards;
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(64, 62, 64, 0.53); 
+    width: 100%;
+    font-size: 2rem; /* Adjust the font size of the heading */
+  
+}
+@keyframes slide-in {
+    0% {
+        margin-left: 100%; /* Start the element off-screen on the right */
+    }
+    100% {
+        margin-left: 0; /* Move the element to its original position */
+    }
+}
+#para2 button{
+    background-color: #514336; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#para2 a:hover{
+    color:rgb(220, 240, 169);
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+#aboutus {
+    
+    margin-top: 0rem;
+    margin-left: 0; /* Adjust the margin to place it on the left */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    padding: 0%;
+    }
+
+
+#aboutheading {
+    font: 600 3.5em 'Raleway', sans-serif;
+    width: 100%;   
+    justify-content: space-around;
+    color: rgba(8, 8, 8,0.6);
+    
+    }
+#aboutheading p{
+    font-size: 20px;
+    font: 'Raleway', sans-serif;
+    color: rgba(3, 3, 3, 0.53); 
+    margin-bottom: 0rem;
+    margin-top: 0;
+       
+    }
+/* #aboutheading {
+
+} */
+#aboutus img {
+    width: 50%; /* Adjust the width of the image */
+    height: 40%; /* Adjust the height of the image */
+    margin-right: 10px; /* Add spacing between the image and text */
+    margin-bottom: 0 rem;
+    }
+#characterstic {
+    display: flex; /* Use flexbox to position the circles */
+    justify-content: space-evenly; /* Add space between the circles */
+    align-items: center; /* Center the circles vertically */
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    
+    }
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate{
+    animation: slide-up 2.0s forwards;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(139, 132, 122);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: 'Raleway', sans-serif;
+    color: rgba(14, 13, 13, 0.53); 
+    font-weight: 700;
+    opacity: 0;
+    border: 7px solid rgb(197, 205, 188);
+    }
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* div{
+    outline: red dotted;
+} */
+#contactspage {
+    position: fixed;
+    top: 50%; /* Adjust the desired vertical position */
+    left: 50%; /* Adjust the desired horizontal position */
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    z-index: 9999; /* Ensure it appears above other elements */
+    background-color:rgb(126, 107, 107) ;
+    border-radius: 1rem;
+}
+#flexdetails {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border-radius: 1rem;
+    
+}
+
+#contactus {
+    background-color: #c2bbb4;
+    flex:5;
+    padding:0,0,0,20%;
+}
+#contactus h3{
+    text-align: center;
+}
+#wecontact{
+    background-color: #d9d4cf;
+    flex:5;
+    padding: 0,0,20%,0;
+    
+}
+#wecontact h3{
+    text-align: center;
+}
+#tab{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1.5%;
+    
+}
+#tab img{
+   height:4%;
+   width: 4%;
+   cursor: pointer;
+
+}
+#contactus img{
+    height: 10%;
+    width: 10%;
+    
+}
+#contactus a{        
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set the desired color */
+}
+#contactus a:hover{
+    color: rgb(99, 82, 82);
+}
+
+#submit {
+    background-color: #c2bbb4;
+    border: none;
+    font-size: large;
+    box-shadow: 2px 2px 4px rgba(81, 67, 54, 0.5);
+    padding: 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 20px; /* Added border-radius property */
+}
+
+#submit:hover {
+    background-color: #514336;
+    color: #c2bbb4;
+    box-shadow: 2px 2px 4px rgba(81, 67, 54, 0.3);
+}
+
+
+/* ----------------------------------------------------------- */
+/*===========================
+      4.SERVICES css 
+===========================*/
+@media (max-width: 767px) {
+    .services-area {
+      padding-top: 75px;
+      padding-bottom: 80px; } }
+  
+  .single-services {
+    padding: 50px 30px;
+    background-color: #fff;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .single-services {
+        padding: 30px 10px; } }
+    @media (max-width: 767px) {
+      .single-services {
+        padding: 30px 10px; } }
+    .single-services .services-icon i {
+      font-size: 52px;
+      color: #EB3656;
+      -webkit-transition: all 0.4s ease-out 0s;
+      -moz-transition: all 0.4s ease-out 0s;
+      -ms-transition: all 0.4s ease-out 0s;
+      -o-transition: all 0.4s ease-out 0s;
+      transition: all 0.4s ease-out 0s; }
+    .single-services .services-content .services-title {
+      font-size: 22px;
+      font-weight: 600;
+      font-family: 'Barlow', sans-serif;
+      -webkit-transition: all 0.4s ease-out 0s;
+      -moz-transition: all 0.4s ease-out 0s;
+      -ms-transition: all 0.4s ease-out 0s;
+      -o-transition: all 0.4s ease-out 0s;
+      transition: all 0.4s ease-out 0s; }
+    .single-services:hover {
+      background-color: #84787a; }
+      .single-services:hover .services-icon i {
+        color: #fff; }
+      .single-services:hover .services-content .services-title,
+      .single-services:hover .services-content p {
+        color: #fff; }
+    /*-------------------------------------------------------------------------------------------------------------*/
+.footer-clean {
+  padding:50px 0;
+  background-color:#bbb1b1;
+  color:#4b4c4d;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
