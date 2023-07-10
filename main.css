@@ -84,7 +84,7 @@ body {
 }
 #para1 {
     font: 600 3.5em 'Raleway', sans-serif;
-    color: rgba(8, 8, 8,0.6); 
+    color: rgba(0, 0, 0, 0.6); 
     width: 100%;
     font-size: 5rem; /* Adjust the font size of the heading */
     margin-bottom: 7rem; /* Add some spacing below the heading */        
@@ -94,7 +94,7 @@ body {
     cursor:default;
 }
 #box{
-    background-color: rgb(127, 119, 109);
+    background-color: rgb(164, 157, 148);
     padding: 3%;
   
     
@@ -103,7 +103,7 @@ body {
 #para2{
     animation: slide-in 1s ease-out forwards;
     font: 600 3.5em 'Raleway', sans-serif;
-    color: rgba(64, 62, 64, 0.53); 
+    color: rgba(0, 0, 0, 0.53); 
     width: 100%;
     font-size: 2rem; /* Adjust the font size of the heading */
   
