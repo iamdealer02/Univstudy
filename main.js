@@ -18,6 +18,7 @@
         //to cross the contact us pop up tab when clicking the image---------------------------------------------------------
 
         document.getElementById("contact-link").addEventListener("click", contacts_block)
+        document.getElementById("join_button").addEventListener("click", contacts_block)
         document.getElementById("crossimg").addEventListener("click", contacts_block)
         // get the element to animate
         var element = document.getElementById('characterstic');
