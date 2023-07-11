@@ -3,11 +3,13 @@ body {
     margin: 0; /* Remove default body margin */
     padding-top: 60px; /* Adjust the padding to account for the fixed header */
     cursor: default;
-    background-color:rgb(244, 236, 225);
+    background-color: #fff9f4;
     filter: none;
 }
 
-
+#home{
+  background-color: #fff9f4;
+}
 #Ontop {
     position: fixed;
     top: 0;
@@ -27,7 +29,7 @@ body {
     height: 3rem;
     width: 3 rem;
    
-    
+     
 }
 #Ontop h2 {
     margin: 0;
@@ -39,6 +41,21 @@ body {
     margin-right: 5rem; /* Remove spacing from the last item */
    
 }
+.navbar-toggler {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  z-index: 999;
+}
+
+.navbar-nav {
+  margin-right: 55px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
 .headerclass{
     text-decoration: none;
 }
@@ -140,6 +157,7 @@ body {
     display: flex; /* Use flexbox to align items */
     align-items: center; /* Center items vertically */
     padding: 0%;
+    background-color: #fff9f4;
     }
 
 
@@ -173,6 +191,7 @@ body {
     align-items: center; /* Center the circles vertically */
     margin-top: 1rem;
     margin-bottom: 3rem;
+    background-color:#fff9f4 ;
     
     }
 @keyframes slide-up {
@@ -238,6 +257,7 @@ body {
 #contactus h3{
     text-align: center;
 }
+
 #wecontact{
     background-color: #d9d4cf;
     flex:5;
@@ -296,6 +316,9 @@ body {
 /*===========================
       4.SERVICES css 
 ===========================*/
+.services-background {
+  background-color: #fff9f4;
+}
 @media (max-width: 767px) {
     .services-area {
       padding-top: 75px;
@@ -303,7 +326,7 @@ body {
   
   .single-services {
     padding: 50px 30px;
-    background-color: #fff;
+    background-color:#fff9f4 ;
     -webkit-transition: all 0.4s ease-out 0s;
     -moz-transition: all 0.4s ease-out 0s;
     -ms-transition: all 0.4s ease-out 0s;
@@ -324,6 +347,7 @@ body {
       -o-transition: all 0.4s ease-out 0s;
       transition: all 0.4s ease-out 0s; }
     .single-services .services-content .services-title {
+      background-color:#fff9f4 ;
       font-size: 22px;
       font-weight: 600;
       font-family: 'Barlow', sans-serif;

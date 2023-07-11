@@ -1,26 +1,40 @@
 @media screen and (max-width: 767px) {
     #contentdiv {
-      padding: 10px;
+      padding: 0 px;
       
     }
-    
+
+    #contentdiv img{
+      margin-bottom: 0;
+      width: 50%;
+    }
   
     #para1 {
       font-size: 30px;
+      margin-bottom: 0;
     }
   
     #para2 {
-      font-size: 16px;
+      font-size: 13px;
     }
   
+    #join_button{
+      font-size: 13 px;
+      padding: 0;
+    }
     button a {
       padding: 8px 16px;
     }
     .box{
-        margin-bottom: 10 rem;
+      padding: 0;
     }
-    .img{
+
+    #aboutus{
+      padding-bottom: 0;
+    }
+    #aboutus img{
         width: 80%;
+    
     }
 
     /*------------------------------------------------*/
@@ -29,6 +43,10 @@
         align-items: center;
         margin-bottom: 0;
       }
+    #aboutus img{
+      margin-top: 3%;
+      width: 80%;
+    }
     
       #aboutheading {
         padding: 20px;
@@ -44,13 +62,13 @@
         margin-top: 0px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; /* Center the circles horizontally */
-        align-items: flex-start; /* Align the circles to the top */
+        justify-content:safe; /* Center the circles horizontally */
+        
       }
     
       .circle {
         margin: 5px;
-        width: auto;
+        width: 3 rem;
         flex-basis: calc(33.33% - 10px); /* Adjust the width of the circles */
       }
     
@@ -61,13 +79,17 @@
       flex-direction: row;
   }
 
-  #contactus {
-      padding: 0;
-      margin-left: 0;
+  #contactspage .container {
+    padding: 0 15px;
   }
 
-  #wecontact {
-      padding: 0;
+  #contactspage .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #contactspage .col-lg-6 {
+    width: 50%;
   }
 
   #tab {
@@ -78,4 +100,13 @@
       height: 8%;
       width: 8%;
   }
+  #Ontop {
+    position: relative;
+  }
+  
+  .navbar-toggler {
+    top: 5px;
+    left: 15px;
+  }
+
 }

@@ -101,3 +101,17 @@
         // window.addEventListener('scroll', function(){            to shrink taskbar when you scroll down and expanded only when you are on top of your page
         //     var 
         // })
+
+        $(document).ready(function() {
+            $('#collapse-button').click(function() {
+              $(this).fadeOut(300, function() {
+                $(this).html('<span class="close-icon" aria-label="Close navigation" aria-expanded="true" data-toggle="collapse" data-target="#navbarNav"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M8 6.586l4.95-4.95a.55.55 0 1 1 .778.779L8.779 7.364l4.95 4.95a.55.55 0 1 1-.778.778l-4.95-4.95-4.95 4.95a.55.55 0 1 1-.778-.778l4.95-4.95-4.95-4.95a.55.55 0 1 1 .778-.779l4.95 4.95z"/></svg></span>').fadeIn(300);
+              });
+            });
+          
+            $(document).on('click', '.close-icon', function() {
+              $('#collapse-button').fadeOut(300, function() {
+                $(this).html('<span class="navbar-toggler-icon"></span>').fadeIn(300);
+              });
+            });
+          });
